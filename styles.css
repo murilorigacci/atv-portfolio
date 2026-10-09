@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111111;
+}
+
+.logo span,
+h1 span,
+h2 span {
+    color: #a855f7;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.texto-inicio {
+    flex: 1;
+}
+
+.destaque {
+    color: #a855f7;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.texto-inicio p {
+    margin-bottom: 25px;
+    color: #cccccc;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #7e22ce;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+    background-color: #a855f7;
+    transform: translateY(-3px);
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #17121f;
+    border: 4px solid #a855f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simbolo {
+    color: #a855f7;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.sobre,
+.habilidades,
+.contato {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.sobre p {
+    max-width: 650px;
+    margin: 20px auto 0;
+    color: #cccccc;
+}
+
+.subtitulo {
+    margin: 10px 0 30px;
+    color: #cccccc;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #171717;
+    border: 1px solid #352044;
+    padding: 25px;
+    border-radius: 10px;
+    width: 230px;
+    box-shadow: 0 4px 10px #00000050;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cccccc;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #7e22ce35;
+    border-color: #a855f7;
+}
+
+.contato p {
+    margin: 15px 0;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #7e22ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #a855f7;
+    transform: scale(1.05);
+}
+
+#mensagem {
+    color: #c084fc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111111;
+    color: #cccccc;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .inicio {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .foto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .simbolo {
+        font-size: 45px;
+    }
+
+    .sobre,
+    .habilidades,
+    .contato {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
